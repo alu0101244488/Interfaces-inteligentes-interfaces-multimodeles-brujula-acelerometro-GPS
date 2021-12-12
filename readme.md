@@ -9,7 +9,8 @@ Grupo: PE102
 
 En esta práctica se pretende implementar una interfaz multimodal en la cual se implementen tres componentes que se encuentran en todos los dispositivos móviles. Estos son la Brújula, los acelerómetros y el GPS. Todos estos elementos pueden ser accedidos desde unity mediante su API.
 
-![]()
+![](https://github.com/alu0101244488/Interfaces-inteligentes-interfaces-multimodeles-brujula-acelerometro-GPS/blob/master/img/aplicacion%20corriendo%20en%20movil.jpg?raw=true)
+
 
 ### Script
 Todas la funcionalidades de la aplicación Se encuentran en un mismo script **PhoneComponent.cs**. Esto es debido a la ejecución en serie del código. Ya que es necesario activar los compoentes aantes de poder usarlos. Además de que realizar todas las acciones desde un mismo script facilita en gran medida la generación de la aplicación.
@@ -35,12 +36,14 @@ Después de esto nos encontramos con la función ***Update()*** la cual en este 
 
 El último elemento es ***OnGUI()*** el cual nos permite en este caso imprimir en un elemento de GUI que se autogenera todas las lecturas de los componentes (brújula, acelerómetros y GPS). Mostrando primero la lectura de obteniendo el valor de la brújula de la misma forma que hacíamos en ***Update()***. Además aquí se muestra de forma actualizada la posición via GPS y la acción de los acelerómetros.
 
+![](https://github.com/alu0101244488/Interfaces-inteligentes-interfaces-multimodeles-brujula-acelerometro-GPS/blob/master/img/entorno%20de%20unity.png?raw=true)
+
 
 ### Build (generar aplicación)
 
 El siguiente paso es generar la APK para poder ejecutar la aplicación en un dispositivo móvil. Lo primero es instalar los módulos de unity para android en este caso. Después de instalarlos pasamos a la sección ***Build Settings*** donde cambiamos de plataforma a android. Y si tenemos conectado el móvil y hemos activado el modo desarrollo del dispositivo podremos realizar la build y ejecutarla directamente en el móvil.
 
-![]() 
+![](https://github.com/alu0101244488/Interfaces-inteligentes-interfaces-multimodeles-brujula-acelerometro-GPS/blob/master/img/build%20para%20android.png?raw=true) 
 
 
 ### Configuración del dispositivo
@@ -54,5 +57,4 @@ El otro paso a realizar si es obligatorio y aque sin esten la palicación no pod
 
 En el siguiente gif se puede observar una ejecución del entorno empleando todas las acciones que se pueden llevar a cabo: 
 
-![]()
-![]()
+![](https://github.com/alu0101244488/Interfaces-inteligentes-interfaces-multimodeles-brujula-acelerometro-GPS/blob/master/img/ejecucion%20de%20la%20aplicacion%20en%20movil.gif?raw=true)
